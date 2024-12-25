@@ -12,8 +12,8 @@
         <div class="page-header-text wow animate__animated animate__fadeInDown" style="padding:0 25px;">
           <h1 class="page-title"  style="   margin-top: 0px !important; margin-bottom: 2px;">{{ pageTitle }}</h1>
           <span>{{ parentPage }}</span>
-          <span class="span-divider font-weight-bold">|</span>
-          <span class="font-weight-bold">{{ pageTitle }}</span>
+          <!-- <span class="span-divider font-weight-bold">|</span>
+          <span class="font-weight-bold">{{ pageTitle }}</span> -->
           <div class="page-banner-shape-title">
             <img src="@/assets/Images/dot.png" class="wow animate__animated animate__fadeInUp animate__delay-1s" alt="image">
           </div>

@@ -49,7 +49,7 @@
                   <li><router-link to="/downloads">Downloads</router-link></li>
                   <li><router-link to="/copyright-form">Copyright Form</router-link></li>
                   <li><router-link to="/paper-status">Paper Status</router-link></li>
-                </ul>
+                </ul> 
               </li>
               <li><router-link to="/blogs">Blogs</router-link></li>
               <li><router-link to="/contact-us">Contact Us</router-link></li>
@@ -88,7 +88,6 @@
                   <ul>
                     <li><router-link to="/ethics">Ethics And Policies</router-link></li>
                     <!-- <li><router-link to="/blogs" >BLOGS</router-link></li> -->
-                    <li><router-link to="/mission-and-scope">Mission And Scope</router-link></li>
                     <li><router-link to="/editorial-board">Editorial Board</router-link></li>
                     <li><router-link to="/peer-review-policy">Peer Review Policy</router-link></li>
                     <li><router-link to="/publication-ethics-policy">Publication Ethics Policy</router-link></li>

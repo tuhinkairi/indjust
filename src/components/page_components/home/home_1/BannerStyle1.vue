@@ -14,7 +14,6 @@
             </p>
           </div>
           <div class="container position-relative">
-
             <div class="row justify-content-between">
               <div class="col-lg-12 col-md-12">
                 <div class="banner-text wow animate__animated animate__fadeInDown">
@@ -36,7 +35,7 @@
                   <div class="row justify-content-center">
                     <div class="banner-button">
                       <a href="http://editorial.fdrpjournals.org/login?journal=6"
-                        class="wow animate__animated animate__flipInX animate__delay-1s large-blue-button">SUBMIT YOUR
+                        class="wow animate__animated animate__flipInX animate__delay-1s large-blue-button text-center">SUBMIT YOUR
                         Article</a>
                     </div>
                     <div class="banner-button">
