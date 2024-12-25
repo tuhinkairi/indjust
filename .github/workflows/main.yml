@@ -1,0 +1,42 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Install dependencies and build
+      - name: Install dependencies and build
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm install
+          npm run build # Replace with your build command
+
+      # Step 3: Deploy to the server
+      - name: Deploy to server via SSH
+        run: |
+          sudo apt-get install -y sshpass  # Install sshpass to allow password authentication
+          sshpass -p "${{ secrets.SERVER_SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no -p 22 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
+            cd /var/www/html/indjcst.com/  # Replace with the actual path on your server
+            # Step 3.1: Backup old dist folder with timestamp
+            if [ -d dist ]; then
+              timestamp=$(date +%Y%m%d_%H%M%S)  # Generate timestamp
+              mv dist backup_dist_$timestamp
+              echo "Old dist folder renamed to backup_dist_$timestamp"
+            fi
+          EOF
+
+      # Step 4: Upload the build files
+      - name: Upload dist folder to server
+        run: |
+          sudo apt-get install -y sshpass  # Ensure sshpass is installed
+          sshpass -p "${{ secrets.SERVER_SSH_PASSWORD }}" scp -o StrictHostKeyChecking=no -r ./dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/var/www/html/indjcst.com/dist/
