@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div>
     <div class="page-header">
       <div class="about-banner-shape-left wow animate__animated animate__fadeInLeft">
