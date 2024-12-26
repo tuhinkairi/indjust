@@ -40,7 +40,7 @@
                     </div>
                     <div class="banner-button">
                       <a href="http://editorial.fdrpjournals.org/login?journal=6"
-                        class="wow animate__animated animate__flipInX animate__delay-1s large-blue-button">
+                        class="wow animate__animated animate__flipInX animate__delay-1s large-blue-button text-center">
                         Author Login</a>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default {
 }
 
 .large-blue-button {
-  margin-left: 30px;
+  margin: 0 12px;
 }
 
 .banner-text h1 {
