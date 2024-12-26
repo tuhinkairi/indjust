@@ -4,7 +4,7 @@
                         <SearchFormSidebar />
                         <CategoriesSidebar />
                         <RecentPostsSidebar />
-                        <TagcloudSidebar />
+                        <TagcloudSidebar /> 
                         <AdBannerSidebar />
                     </div>
 </template>
