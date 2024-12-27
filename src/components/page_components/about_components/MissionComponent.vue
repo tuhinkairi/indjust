@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="page-heading"> Mission & Vision: </div>
-          <div class="missionContent row">
-            <div class="col-8">
+          <div class="missionContent d-flex flex-column flex-md-row " style="gap: 15px;">
+            <div class="">
               <h2>MISSION</h2>
               <p>
                 The Indian Journal of Computer Science and Technology (INDJCST)
@@ -29,8 +29,8 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 aimImage">
-              <img src="@/assets/Images/Aim.png" alt="img" height="380" />
+            <div class=" ">
+              <img src="@/assets/Images/Aim.png" style="margin: auto; display: block;" alt="img" height="350" />
             </div>
           </div>
           <div class="missionContent">
@@ -41,7 +41,7 @@
             </h3>
             <div class="missionList">
               <div class="row">
-                <div class="col-6">
+                <div class="">
                   <ul>
                     <li><p>E-Science And E-Commerce</p></li>
                     <li><p>Signal And Image Processing</p></li>
@@ -57,7 +57,7 @@
                     <li><p>Warning Systems</p></li>
                   </ul>
                 </div>
-                <div class="col-6">
+                <div class="">
                   <ul>
                     <li><p>Decision Support Systems</p></li>
                     <li><p>Information Processes And Systems</p></li>
